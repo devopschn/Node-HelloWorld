@@ -50,6 +50,6 @@ jobs:
           name: Build and Deploy
           command: |
             chmod +x /root/workspace/deployment.sh
-            if [ "${CIRCLE_BRANCH}" == "circleci-project-setup" ]; then
+            if [ "${CIRCLE_BRANCH}" == "main" ]; then
               ./deployment.sh
             fi  
